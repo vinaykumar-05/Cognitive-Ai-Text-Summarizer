@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>🧠 Cognitive AI Summarizer</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@2/dist/tesseract.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 class="title">🧠 Cognitive AI Summarizer</h1>
+
+<div class="card">
+
+<!-- ✅ ONLY FILE INPUT -->
+<input type="file" id="fileInput" multiple accept=".pdf,image/*">
+
+<div class="buttons">
+<button onclick="processInput()">🚀 Generate AI Summary</button>
+<button onclick="clearAll()">🧹 Clear</button>
+</div>
+
+<div id="loader" class="loader hidden"></div>
+<div id="progress"></div>
+
+</div>
+
+<div id="output"></div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

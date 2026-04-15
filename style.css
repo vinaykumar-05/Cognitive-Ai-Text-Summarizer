@@ -1,0 +1,134 @@
+body{
+margin:0;
+font-family:'Poppins', sans-serif;
+background:linear-gradient(270deg,#141e30,#243b55);
+background-size:400% 400%;
+animation:bgMove 10s infinite alternate;
+color:white;
+}
+
+@keyframes bgMove{
+0%{background-position:0%}
+100%{background-position:100%}
+}
+
+.container{
+width:90%;
+margin:auto;
+padding:20px;
+}
+
+.title{
+text-align:center;
+font-size:32px;
+margin-bottom:20px;
+}
+
+/* Glass Card */
+.card{
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.buttons{
+text-align:center;
+margin-top:10px;
+}
+
+button{
+padding:12px 20px;
+margin:5px;
+border:none;
+border-radius:12px;
+background:#00f2fe;
+color:black;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+background:#4facfe;
+}
+
+/* Loader */
+.loader{
+border:6px solid #f3f3f3;
+border-top:6px solid #00f2fe;
+border-radius:50%;
+width:40px;
+height:40px;
+animation:spin 1s linear infinite;
+margin:15px auto;
+}
+
+.hidden{
+display:none;
+}
+
+@keyframes spin{
+100%{transform:rotate(360deg);}
+}
+
+/* Output */
+#output{
+margin-top:20px;
+background:white;
+color:black;
+padding:20px;
+border-radius:20px;
+max-height:600px;
+overflow:auto;
+}
+
+/* Cards */
+.page,.section{
+background:#f9f9f9;
+padding:15px;
+margin:10px 0;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.section h3{
+color:#243b55;
+}
+
+/* 🔥 VISUAL INSIGHT CARDS */
+.visual-card{
+background:#eef7ff;
+border-left:6px solid #007bff;
+padding:15px;
+margin:12px 0;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.visual-card:hover{
+transform:translateY(-5px);
+}
+
+.visual-title{
+font-weight:bold;
+color:#007bff;
+font-size:16px;
+}
+
+.visual-page{
+font-size:12px;
+color:#555;
+}
+
+.visual-caption{
+margin-top:6px;
+font-style:italic;
+}
+
+.visual-desc{
+margin-top:8px;
+}
